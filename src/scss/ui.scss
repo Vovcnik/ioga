@@ -1,0 +1,13 @@
+._title {
+	font-weight: 500;
+	line-height: math.div(48, 36);
+	// font-size: math.div(36, 22); test
+	color: #091133;
+	font-size: rem(36);
+	// размер отступа зависит от размера шрифта?
+	margin-bottom: rem(16);
+}
+
+._text {
+	line-height: math.div(26, 16);
+}

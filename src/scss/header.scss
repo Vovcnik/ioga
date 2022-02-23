@@ -1,4 +1,10 @@
 .header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	background-color: #fff;
 	// .header__container
 
 	&__container {
@@ -7,6 +13,7 @@
 	// .header__menu
 
 	&__menu {
+		padding: 10px 0px;
 	}
 
 	// .header__logo
@@ -17,6 +24,9 @@
 		font-weight: 900;
 		line-height: math.div(38, 26);
 		margin: 0px 20px 0px 20px;
+		@media (max-width: $tablet) {
+			margin: 0;
+		}
 	}
 
 	// .header__btn
@@ -29,11 +39,18 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		width: 160px;
 		height: 26px;
 		justify-content: center;
 		border-radius: 2px;
-		flex: 0 0 auto;
+		flex: 0 0 160px;
+		transition: all 0.3s ease 0s;
+		&:hover {
+			background: #798de6;
+			transition: all 0.3s ease 0s;
+		}
+		@media (max-width: $mobileSmall) {
+			display: none;
+		}
 	}
 }
 .menu {
@@ -49,7 +66,8 @@
 		align-items: center;
 		justify-content: space-between;
 		gap: 10px;
-		margin: 18px 0px 0px 0px;
+
+		min-height: 40px;
 	}
 
 	// .menu__list
@@ -57,14 +75,48 @@
 	&__list {
 		display: flex;
 		gap: 35px;
-		@include adaptiveValue("gap", 35, 20);
+		row-gap: 5px;
+		@include adaptiveValue("column-gap", 35, 20);
 		flex-wrap: wrap;
 		flex: 1 1 auto;
+		@media (max-width: $mobile) {
+			position: fixed;
+			width: 150px;
+			min-height: 25%;
+			top: 0;
+			left: -100%;
+			overflow: auto;
+			background-color: rgb(255, 255, 255);
+			padding: rem(20);
+			transition: left 0.3s ease 0s;
+			z-index: 4;
+			display: block;
+			margin: 60px 0px 0px 0px;
+			border-bottom-right-radius: 15px;
+			border-top-right-radius: 15px;
+			box-shadow: 8px 0px 10px 2px rgba(34, 60, 80, 0.2);
+			.menu-open & {
+				left: 0;
+			}
+		}
 	}
 
 	// .menu__link
 
 	&__link {
+		color: #505f98;
+		font-size: rem(14);
+		line-height: math.div(24, 14);
+		transition: all 0.3s ease 0s;
+
+		&:hover {
+			text-decoration: underline;
+			transition: opacity 0.3s ease 0s;
+		}
+		@media (max-width: $tablet) {
+			font-size: rem(18);
+			font-weight: 900;
+		}
 	}
 }
 .icon-menu {
@@ -77,4 +129,56 @@
 	max-width: 600px;
 	width: 100%;
 	margin: 0px 50px 0px 0px;
+}
+
+//====================================================================================================
+
+//====================================================================================================
+
+//Burger
+
+.icon-menu {
+	display: none;
+	@media (max-width: $mobile) {
+		display: block;
+		position: relative;
+		flex: 0 0 30px;
+		height: 18px;
+		margin-left: 30px;
+		cursor: pointer;
+		z-index: 5;
+		span,
+		&::before,
+		&::after {
+			content: "";
+			transition: all 0.3s ease 0s;
+			right: 10px;
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			background-color: #37447e;
+		}
+		&::before {
+			top: 0px;
+		}
+		&::after {
+			bottom: 0px;
+		}
+		span {
+			top: calc(50% - 1px);
+		}
+		.menu-open & {
+			span {
+				transform: scale(0);
+			}
+			&::before {
+				transform: rotate(-45deg);
+				top: calc(50% - 1px);
+			}
+			&::after {
+				transform: rotate(45deg);
+				bottom: calc(50% - 1px);
+			}
+		}
+	}
 }
