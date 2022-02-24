@@ -86,7 +86,7 @@
 			top: 0;
 			left: -100%;
 			overflow: auto;
-			background-color: rgb(255, 255, 255);
+
 			padding: rem(20);
 			transition: left 0.3s ease 0s;
 			z-index: 4;
@@ -131,13 +131,13 @@
 	max-width: 600px;
 	width: 100%;
 	margin: 0px 50px 0px 0px;
-	background: rgb(255, 255, 255);
+
 	border-top-right-radius: 15px;
 	border-bottom-right-radius: 15px;
 	&::before {
 		content: "";
 		position: fixed;
-		background-color: #fff;
+
 		top: 0px;
 		height: 60px;
 		z-index: -1;

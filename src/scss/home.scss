@@ -19,23 +19,22 @@
 	// .list__column
 
 	&__column {
-		margin: 60px 0px 0px 0px;
 	}
 
 	// .list__bagraund
 
 	&__bagraund {
 		position: fixed;
-		top: -50px;
-		right: -30%;
-		width: 100%;
-		height: 100%;
+		top: -48px;
+		right: -313px;
+
 		z-index: -1;
+		img {
+			max-width: 1490px;
+		}
 		@media (max-width: $tablet) {
-			right: -40px;
 		}
 		@media (max-width: 1440px) {
-			top: -200px;
 		}
 	}
 }
