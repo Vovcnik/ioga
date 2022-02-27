@@ -79,6 +79,7 @@
 		@include adaptiveValue("column-gap", 35, 20);
 		flex-wrap: wrap;
 		flex: 1 1 auto;
+
 		@media (max-width: $mobile) {
 			position: fixed;
 			width: 150px;
@@ -131,17 +132,18 @@
 	max-width: 600px;
 	width: 100%;
 	margin: 0px 50px 0px 0px;
-
+	background: #fff;
 	border-top-right-radius: 15px;
 	border-bottom-right-radius: 15px;
 	&::before {
 		content: "";
 		position: fixed;
-
+		background: #fff;
 		top: 0px;
+		left: 0;
 		height: 60px;
 		z-index: -1;
-		width: 610px;
+		width: 600px;
 		border-bottom-right-radius: 15px;
 		border-top-right-radius: 15px;
 	}
