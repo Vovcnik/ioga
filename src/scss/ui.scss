@@ -6,7 +6,7 @@
 	font-size: rem(36);
 	@include adaptiveValue("font-size", 36, 20);
 	// размер отступа зависит от размера шрифта?
-	margin-bottom: rem(16);
+	@include adaptiveValue("margin-botoom", 16, 10);
 }
 
 .__text {
