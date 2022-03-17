@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include('html/_head.htm',{
-"title":"Главная"
-})
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220313203810">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
 <body>
 	<div class="wrapper">
-		@@include('html/_header.htm',{})
+		<header class="header">
+			<div class="header__container ">
+
+				<div class="header__menu menu">
+
+					<nav class="menu__body">
+						<div class="menu__logo">
+							<ul class="menu__list">
+								<li><a href="#" class="menu__link">Home</a></li>
+								<li><a href="#" class="menu__link">About</a></li>
+								<li><a href="#" class="menu__link">Contact</a></li>
+
+
+
+							</ul>
+							<a href="#" class="header__logo">Landy</>
+						</div>
+
+
+						<a href="#login" class="header__btn _popup-link">buy now</a>
+
+						<div class="menu__icon icon-menu">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</nav>
+
+				</div>
+
+			</div>
+		</header>
 		<main class="page">
 			<section class="fast">
 				<div class="fast__container _container">
@@ -34,21 +72,21 @@
 
 							<div class="column-list__btn btn-list">
 								<a href="#" class="btn-list__link">Purchase UI Kit</a>
-								<a href="#" class="btn-list__link">Learn More</a>
+								<a href="#" class="btn-list__link"">Learn More</a>
 							</div>
 						</div>
 
 						<div class=" list__img">
-							<img class="gear-wheel_big" src="@img/powerful/gear-wheel_big.png" alt="">
-							<img class="gear-wheel_small" src="@img/powerful/gear-wheel_small.png" alt="">
-							<img class="bagraund" src="@img/bgraund.png" alt="">
-							<img class="img" src="@img/fast.png" alt="">
+									<picture><source srcset="img/powerful/gear-wheel_big.webp" type="image/webp"><img class="gear-wheel_big" src="img/powerful/gear-wheel_big.png?_v=1647193090198" alt=""></picture>
+									<picture><source srcset="img/powerful/gear-wheel_small.webp" type="image/webp"><img class="gear-wheel_small" src="img/powerful/gear-wheel_small.png?_v=1647193090198" alt=""></picture>
+									<picture><source srcset="img/bgraund.webp" type="image/webp"><img class="bagraund" src="img/bgraund.png?_v=1647193090198" alt=""></picture>
+									<picture><source srcset="img/fast.webp" type="image/webp"><img class="img" src="img/fast.png?_v=1647193090198" alt=""></picture>
+							</div>
+
+
+
 						</div>
-
-
-
 					</div>
-				</div>
 			</section>
 
 			<section class="powerful ">
@@ -73,7 +111,7 @@
 								<div class="expert-items">
 									<div class="expert-items__item ">
 										<div class="item-expert__column">
-											<div class="item-expert__img"><img src="@img/powerful/goes.svg" alt="картинка"></div>
+											<div class="item-expert__img"><img src="img/powerful/goes.svg?_v=1647193090198" alt=""></div>
 											<div class="item-expert__title">First parties</div>
 											<div class="item-expert__text">Initially, we made a product as calculated
 												We need, and then it was already finalized.We saw that the product was selling.AND
@@ -83,7 +121,7 @@
 									</div>
 									<div class="expert-items__item ">
 										<div class="item-expert__column">
-											<div class="item-expert__img"><img src="@img/powerful/goes.svg" alt="картинка"></div>
+											<div class="item-expert__img"><img src="img/powerful/goes.svg?_v=1647193090198" alt=""></div>
 											<div class="item-expert__title">Basic qualities</div>
 											<div class="item-expert__text">For example, there is a trend consumption of natural
 												products,
@@ -101,7 +139,7 @@
 							<div class="expert-item">
 
 								<div class="expert-items__item item-expert-img">
-									<img src="@img/powerful/powerful.png" alt="">
+									<picture><source srcset="img/powerful/powerful.webp" type="image/webp"><img src="img/powerful/powerful.png?_v=1647193090198" alt=""></picture>
 								</div>
 							</div>
 
@@ -119,7 +157,7 @@
 					<div class=last-light__container _container">
 						<div class="light-items">
 							<div class="light-item__img">
-								<img src="@img/powerful/undraw.png" alt="">
+								<picture><source srcset="img/powerful/undraw.webp" type="image/webp"><img src="img/powerful/undraw.png?_v=1647193090198" alt=""></picture>
 							</div>
 							<div class="light-item__column column-light">
 								<div class="column-light__title __title">Production scheme</div>
@@ -142,7 +180,7 @@
 						</div>
 						<div class="light-items">
 							<div class="light-item__img">
-								<img src="@img/powerful/undraw2.png" alt="">
+								<picture><source srcset="img/powerful/undraw2.webp" type="image/webp"><img src="img/powerful/undraw2.png?_v=1647193090198" alt=""></picture>
 							</div>
 							<div class="light-item__column column-light">
 								<div class="column-light__title __title">Definition of the basic characteristics of the product
@@ -169,7 +207,7 @@
 						</div>
 						<div class="light-items">
 							<div class="light-item__img">
-								<img src="@img/powerful/undraw3.png" alt="">
+								<picture><source srcset="img/powerful/undraw3.webp" type="image/webp"><img src="img/powerful/undraw3.png?_v=1647193090198" alt=""></picture>
 							</div>
 							<div class="light-item__column column-light">
 								<div class="column-light__title __title">Promotion to the market</div>
@@ -238,7 +276,7 @@
 					<div class="footer__container _container">
 						<div class="footer__top top-footer">
 							<div class="top-footer__company">©2020 Yourcompany</div>
-							<div class="top-footer__logo"><img src="@img/powerful/logo.png" alt=""></div>
+							<div class="top-footer__logo"><picture><source srcset="img/powerful/logo.webp" type="image/webp"><img src="img/powerful/logo.png?_v=1647193090198" alt=""></picture></div>
 							<a href="#" class="top-footer__btn">Purchase now</a>
 
 						</div>
@@ -268,10 +306,29 @@
 
 
 	</main>
-	@@include('html/_footer.htm',{})
+	<footer class="footer">
+		<div class="footer__container">
+
+		</div>
+	</footer>
 	</div>
-	<!-- @@include('html/_popup.htm',{}) -->
-	@@include('html/_js.htm',{})
+	<!-- <div class="hystmodal" id="myPopup" aria-hidden="true">
+	<div class="hystmodal__wrap">
+		<div class="hystmodal__window" role="dialog" aria-modal="true">
+			<button data-hystclose class="hystmodal__close">Закрыть</button>
+		</div>
+	</div>
+</div>
+<div class="hystmodal" id="massageName" aria-hidden="true">
+	<div class="hystmodal__wrap">
+		<div class="hystmodal__window" role="dialog" aria-modal="true">
+			<button data-hystclose class="hystmodal__close">Закрыть</button>
+			Сообщение
+		</div>
+	</div>
+</div>
+ -->
+	<script src="js/app.min.js?_v=20220313203810"></script>
 </body>
 
 </html>
